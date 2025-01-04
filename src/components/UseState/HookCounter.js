@@ -12,3 +12,11 @@ function HookCounter() {
 }
 
 export default HookCounter;
+
+/**
+ 
+The useState hook in React is used to manage state in functional components. 
+It allows you to add state variables to your component without needing to write a class.
+
+
+ */
