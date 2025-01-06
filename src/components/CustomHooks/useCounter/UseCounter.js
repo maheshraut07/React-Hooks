@@ -11,11 +11,11 @@ function UseCounter(InitialCount = 0, value = 1) {
   const decrement = () => {
     setCount(prevCount => prevCount - value)
   }
+
   const reset = () => {
     setCount(InitialCount)
   }
-
-
+  
   return [count, increment, decrement, reset]
 }
 

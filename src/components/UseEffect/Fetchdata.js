@@ -40,4 +40,13 @@ Perform Side Effects: It allows you to perform actions like data fetching, subsc
 Control Component Lifecycle: It helps in managing the lifecycle of a component, similar to how lifecycle methods work in class components (e.g., componentDidMount, componentDidUpdate, componentWillUnmount).
 Cleanup: It provides a way to clean up resources (e.g., unsubscribe from a subscription) when the component unmounts or before running the effect again.
 
+
+
+The return statement in the useEffect hook is used for cleanup purposes. It’s equivalent to componentWillUnmount in class components. Here’s what it does:
+
+Purpose: Cleans up side effects to avoid memory leaks or unwanted behavior.
+When it's called:
+Before the effect runs again (if dependencies change).
+When the component unmounts.
+
 */

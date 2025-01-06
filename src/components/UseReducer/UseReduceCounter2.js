@@ -39,6 +39,8 @@ const UseReduceCounter2 = () => {
             <button onClick={() => dispatch({type:'decrement',value:5})}>Decrement first Counter by 5</button>
             <button onClick={() => dispatch({type:'increment2',value:1})}>Increment second Counter</button>
             <button onClick={() => dispatch({type:'decrement2',value:1})}>Decrement second Counter</button>
+            <button onClick={() => dispatch({type:'increment2',value:5})}>increment second Counter by 5 </button>
+            <button onClick={() => dispatch({type:'decrement2',value:5})}>Decrement second Counter by 5 </button>
             <button onClick={() => dispatch({type:'reset'})}>Reset both the Counters</button> 
         </div>
     </div>

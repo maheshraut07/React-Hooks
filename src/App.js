@@ -50,7 +50,7 @@ function App() {
       {/* <UseReduceCounter2/> */}
       {/* <UseReduceCounter3/> */}
       {/* <FetchDataUsingUseReducer/> */}
-      <Parent/>
+      {/* <Parent/> */}
       {/* <UseMemoCounter/> */}
       {/* <FocusInput/> */}
       {/* <HookTimer/> */}
@@ -58,7 +58,7 @@ function App() {
       {/* <DocumentTitle2/> */}
       {/* <UseCounter1/> */}
       {/* <UseCounter2/> */}
-      {/* <UseForm/> */}
+      <UseForm/>
     </div>
   );
 }

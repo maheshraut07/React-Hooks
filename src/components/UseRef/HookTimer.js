@@ -8,12 +8,13 @@ export const HookTimer = () => {
   useEffect(() =>{
     intervalRef.current = setInterval(() =>{
         setTimer(prevTimer => prevTimer +  1 )
+        console.log("tick")
     }, 1000)
 
     return () =>{
         clearInterval(intervalRef.current)
     }
-  },[])
+  },[timer])
      
   return (
     <div>
@@ -22,3 +23,25 @@ export const HookTimer = () => {
     </div>
   )
 }
+
+
+// import React,{useEffect, useRef, useState} from 'react'
+
+// export const HookTimer = () => {
+ 
+//   const timerIdRef = useRef(null);
+
+//   useEffect(() => {
+//     timerIdRef.current = setInterval(() => {
+//       console.log('Tick');
+//     }, 1000);
+
+//     return () => clearInterval(timerIdRef.current);
+//   }, []);
+  
+//   return <div>Timer is running...</div>;
+// }
+
+
+
+
