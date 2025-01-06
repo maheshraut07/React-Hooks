@@ -40,7 +40,7 @@ function App() {
       {/* <ClassCounter1/> */}
       {/* <UseEffectCounter1/> */}
       {/* <ClassCounter2/> */}
-      {/* <UseEffectCounter2/> */}
+      <UseEffectCounter2/>
       {/* <OnMouse/> */}
       {/* <MouseContainer/> */}
       {/* <Fetchdata/> */}
