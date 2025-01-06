@@ -40,7 +40,7 @@ function App() {
       {/* <ClassCounter1/> */}
       {/* <UseEffectCounter1/> */}
       {/* <ClassCounter2/> */}
-      <UseEffectCounter2/>
+      {/* <UseEffectCounter2/> */}
       {/* <OnMouse/> */}
       {/* <MouseContainer/> */}
       {/* <Fetchdata/> */}
@@ -50,7 +50,7 @@ function App() {
       {/* <UseReduceCounter2/> */}
       {/* <UseReduceCounter3/> */}
       {/* <FetchDataUsingUseReducer/> */}
-      {/* <Parent/> */}
+      <Parent/>
       {/* <UseMemoCounter/> */}
       {/* <FocusInput/> */}
       {/* <HookTimer/> */}

@@ -6,6 +6,7 @@ const FetchDataWithIDWithButton = () => {
   const [post, setPost] = useState({})
   const [id, setId] = useState(1)
   const [idFromButtonClick, setIdFromButtonClick] = useState(1)
+  console.log("component rendered")
 
   useEffect(() =>{
     axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)

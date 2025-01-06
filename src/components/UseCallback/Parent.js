@@ -8,6 +8,7 @@ const Child = React.memo(({ onClick }) => {
 function Parent() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
+  console.log("parent component rendered")
 
   const increment = useCallback(() => {
     setCount(count + 1);
@@ -27,6 +28,40 @@ function Parent() {
 }
 
 export default Parent;
+
+// without useCallback
+
+// import React, { useState } from "react";
+
+// const Child = ({ onClick }) => {
+//   console.log("Child component rendered!");
+//   return <button onClick={onClick}>Increment</button>;
+// };
+
+// function Parent() {
+//   const [count, setCount] = useState(0);
+//   const [name, setName] = useState("");
+//   console.log("parent component rendered")
+
+//   const increment = () => {
+//     setCount(count + 1);
+//   };
+
+//   return (
+//     <div>
+//       <input
+//         value={name}
+//         onChange={(e) => setName(e.target.value)}
+//         placeholder="Enter name"
+//       />
+//       <p>Count: {count}</p>
+//       <Child onClick={increment} />
+//     </div>
+//   );
+// }
+
+// export default Parent;
+
 
 /*
 

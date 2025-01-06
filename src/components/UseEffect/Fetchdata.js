@@ -4,6 +4,7 @@ import axios from 'axios'
 const Fetchdata = () => {
 
   const [posts, setPosts] = useState([])
+  console.log("component rendered")
 
   useEffect(() =>{
     axios.get('https://jsonplaceholder.typicode.com/posts')
@@ -12,6 +13,7 @@ const Fetchdata = () => {
         setPosts(res.data)
     })
     .catch(err => console.error(err))
+    console.log("component rendered due to useEffect Hook")
   },[])
 
   return (

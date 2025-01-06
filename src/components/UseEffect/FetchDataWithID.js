@@ -5,6 +5,7 @@ const FetchDataWithID = () => {
 
   const [post, setPost] = useState({})
   const [id, setId] = useState(1)
+  console.log("component rendered")
 
   useEffect(() =>{
     axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
@@ -13,6 +14,8 @@ const FetchDataWithID = () => {
         setPost(res.data)
     })
     .catch(err => console.error(err))
+    console.log("component rendered due to useEffect Hook")
+
   },[id])
 
   return (
